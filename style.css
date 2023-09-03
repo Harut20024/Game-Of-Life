@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    height: 100vh;
+    margin: 0;
+    text-align: center; 
+}
+
+canvas {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #acacac;
+}
+
+h1 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}

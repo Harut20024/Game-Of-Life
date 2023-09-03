@@ -33,7 +33,11 @@ class Grass {
     }
 
     mul() {
-        this.multiply++;
+        if (heading.innerHTML === "Autumn") this.multiply += 2
+        else if (heading.innerHTML === "Winter") {
+            this.multiply = 0
+        } else this.multiply++;
+
         let newCell = random(this.chooseCell(0));
         if (this.multiply >= 4 && newCell) {
             let newGrass = new Grass(newCell[0], newCell[1], this.index);

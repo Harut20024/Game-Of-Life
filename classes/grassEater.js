@@ -55,8 +55,6 @@ class GrassEater {
     move() {
 
         this.energy--
-
-        //console.log(this.energy);
         let emptyCells = this.chooseCell(0)
         let newCell = random(emptyCells)
         if (newCell) {

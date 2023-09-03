@@ -44,7 +44,7 @@ class Predator {
 
     }
     mul() {
-        let newCell = random(this.chooseCell(0));
+        let newCell = random(this.chooseCell(2));
         if (newCell) {
             let newPredator = new Predator (newCell[0], newCell[1], this.index);
             predatorArr.push(newPredator);
@@ -55,8 +55,6 @@ class Predator {
     move() {
 
         this.energy--
-
-        //console.log(this.energy);
         let emptyCells = this.chooseCell(0)
         let newCell = random(emptyCells)
         if (newCell) {
